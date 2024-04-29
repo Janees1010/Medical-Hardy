@@ -275,6 +275,9 @@ body{
 .fifth-session-img{
     position: relative;
 }
+.fifth-session-img img{
+    display:block;
+}
 .fifth-session-cards{
     display: flex;
     gap:20px;
