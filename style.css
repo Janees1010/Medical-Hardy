@@ -19,6 +19,13 @@ img{
     width:100%;
 }
 
+.center{
+    text-align: center;
+}
+.semi-bold{
+    font-weight: 700;
+}
+
 body{
     font-family: Montserrat;
 }
@@ -76,7 +83,11 @@ body{
     border-radius: 5px;
     
 }
-
+.arrow-icon{
+     padding-left: 5px;
+     width: 12px; 
+     height: 10px;
+}
 .colored-btn{
     
     background-color: #8D5CF6 ;
@@ -89,8 +100,9 @@ body{
 }
 .rounded-btn{
     border-radius: 37px;
-    width:141px;
-    height:44px;
+     width:141px;
+    height:44px; 
+    /* padding: 15px 5px; */
     border: 1px solid #8D5CF6;
     background: transparent;
     color: #8D5CF6;
@@ -124,34 +136,39 @@ body{
     color: #252B42;
     font-size: 52px;
     font-weight: 700;
+    max-width: 480px;
   
 }
 .landing-page-contents p{
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
+    max-width: 425px;
 } 
 
 .landingpage-img-container{
     width:50%
 }
 
-.second-session{
+.facility-session{
     display:flex; 
     flex-direction: column;
     gap: 100px;
     margin-top: 100px;
 }
-.second-session-contents{
+.facility-session-contents{
    
     display:flex;
     flex-direction: column;
     gap:10px;
 }
 
-.second-session-contents h6{
+.facility-session-contents h6{
     color:#8D5CF6;
     font-size: 14px;
     font-weight: 700;
+  }
+  .facility-session-contents p{
+    max-width: 440px;
   }
   .second-heading{
     font-size: 40px;
@@ -160,13 +177,13 @@ body{
 
   }
 
-.second-session-cards{
+.facility-session-cards{
     display:flex;
     gap:30px;
     justify-content: center;
 }
 
-.second-session-card{
+.facility-session-card{
     width:238px;
     height:288px;
     padding:40px 35px;
@@ -179,30 +196,30 @@ body{
     
 }
 
-.second-session-card:hover{
+.facility-session-card:hover{
   background-color: #8D5CF6;
   transition: ease-in-out 0.3s;
   color:white;
   height:300px;
 }
-.second-session-card:hover p{
+.facility-session-card:hover p{
     background-color: #8D5CF6;
     transition: ease-in-out 0.3s;
     color:white;
   }
 
-  .second-session-card:hover hr{
+  .facility-session-card:hover hr{
     background-color: #8D5CF6;
     transition: ease-in-out 0.3s;
     background-color:white;
   }
 
-.second-session-card img{
+.facility-session-card img{
     width:72px;
     height:72px;
 }
 
-  .second-session-card hr{
+  .facility-session-card hr{
     width:50px;
     height:2px;
     background-color:rgba(231, 64, 64, 1);
@@ -231,8 +248,17 @@ body{
     gap:30px;
    
 }
+.session-contents p{
+    max-width: 440px;
+}
+.extra-gap{
+    gap:125px;
+}
 .video-bg{
     position: relative;
+}
+.video-bg img{
+    border-radius: 20px;
 }
 .video-icon-cover{
     position: absolute;
@@ -257,47 +283,53 @@ body{
     display: flex;
     flex-direction: column;
     gap:15px;
+    max-width: 440px;
 }
 
 .blue-txt{
     font-size: 14px;
     font-weight: 700;
     color: #8D5CF6;
+    text-decoration: none;
+    
 }
 
-.fifth-session{
+.experts-session{
     display: flex;
     flex-direction: column;
     gap:100px;
     margin-top: 100px;
     margin-bottom: 150px;
 }
-.fifth-session-img{
+.experts-session-img{
     position: relative;
 }
-.fifth-session-cards{
+.experts-session-cards{
     display: flex;
     gap:20px;
 }
-.fifth-session-card{
+.experts-session-card{
     display:flex;
     flex-direction: column;
     
 }
-.fifth-session-card-contents{
+.experts-session-card-contents{
     padding: 20px 5px;
     display:flex;
     flex-direction: column;
     gap:15px;
 }
 .bold-txt{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
+    max-width: 125px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.fifth-session-card-contents p{
+.experts-session-card-contents p{
   max-width: 200px;
- overflow: hidden;
- text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .icon-container{
     display:flex;
@@ -317,12 +349,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid white
     
 }
  .icon-cover i{
     display: flex;
     align-items: center;
     justify-content: center;
+   
 } 
 
 .icon{
@@ -334,12 +368,18 @@ body{
 }
 .rating-container{
     width:210px;
-    height:26px;
+    /* height:26px; */
     display:flex;
     justify-content: space-between; 
     align-items: center;
  
 }
+
+.rating-container a{
+   max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} 
 .sales-container{
     width:83px ;
     height:24px ;
@@ -368,6 +408,11 @@ body{
     left:20px;
 }
 
+.sale-label h5{
+    color:white;
+    /* text-align: center; */
+}
+
 .rating{
     width:50px;
     height:26px;
@@ -382,9 +427,23 @@ body{
     
 
 }
+.rating-star{
+     color:  rgba(255, 206, 49, 1);
+     margin-bottom: 3px;
+}
+
+.rating p{
+    color:white;
+    font-size: 12px;
+}
+
+.rating span{
+    color:  rgba(255, 206, 49, 1); 
+    margin-bottom: 3px;
+}
 
 
-.sixth-section{
+.pricing-section{
     
     /* margin-left: 150px; */
     margin-top: 100px;
@@ -394,6 +453,15 @@ body{
     gap:80px;
 }
 
+.pricing-details h2{
+    font-size: 40px;
+     font-weight: 700; 
+     color:#8D5CF6;
+}
+.pricing-details p{
+    color: rgba(142, 194, 242, 1);
+     font-weight: 700;
+}
 .purple-icon-cover{
     width:96px;
     height:96px;
@@ -410,6 +478,11 @@ body{
     top:6px;
     left:4px;
 } */
+
+.parent-card-container{
+    display: flex;
+     gap: 30px;
+}
 .card-container{
     position: relative;
     width:323px ;
@@ -460,12 +533,29 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    color:white;
 }
-.tick-icon-cover i{
+.bg-grey{
+    color:rgba(189, 189, 189, 1);
+}
+.bg-orange{
+   color: rgba(255, 123, 82, 1);
+}
+.tick-icon-grey-cover{
+    background-color:rgba(189, 189, 189, 1);
+    width:32px;
+    height:32px;
+    border-radius: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+/* .tick-icon-cover i{
     color: white;
    
     
-}
+} */
 .tick-icon-parent-container{
     display: flex;
     flex-direction: column;
@@ -484,6 +574,8 @@ body{
   position: absolute;
   top:-45px;
   right:-25px;
+   background-color:  rgba(231, 124, 64, 1);
+   color: white;
 }
 
 .testimonials-container{
@@ -502,6 +594,10 @@ body{
     align-items: center;
 }
 
+.testimonials p{
+    text-align: center;
+    max-width: 300px;
+}
 /* .testimonial-img-cover{
 width: 128px;
 height: 128px;
@@ -531,6 +627,9 @@ opacity: 0px
     align-items: center; 
     gap:10px;
 }
+.join-us-container p{
+    max-width: 470px;
+}
 .join-us-container h2{
     font-size: 40px;
     font-weight: 700;
@@ -548,6 +647,11 @@ opacity: 0px
     padding: 15px;
 
 }
+.input-box-container button{
+    border-radius: 5px;
+    height: 50px;
+   
+}
 
 .footer-container{
     max-width: 1050px;
@@ -562,7 +666,7 @@ opacity: 0px
     display:flex;
     /* align-items: center;
     justify-content: center; */
-    gap: 80px;
+    gap: 50px;
 }
 .footer-details{
     display: flex;
@@ -573,11 +677,19 @@ opacity: 0px
     font-size: 16px;
     font-weight: 700;
 }
+.footer-details p{
+    max-width: 300px;
+}
 .footer-details i{
     font-size: 20px;
     color: rgba(141, 92, 246, 1);
     padding-right: 5px;
 
+}
+.location-icon-container{
+    display: flex;
+    align-items: center;
+    gap:7px;
 }
 .copyright-section{
     padding-bottom: 15px;
@@ -592,7 +704,57 @@ opacity: 0px
 
 .socialmedia-icons i{
     color: rgba(141, 92, 246, 1);
+    font-size: 19px;
 
+}
+
+@media only screen and (max-width:600px) {
+    .header{
+        position: relative;
+    }
+    .navbar ul{
+        position: fixed;
+        flex-direction: column;
+        padding:40px 10px;
+        gap:30px;
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:150px;
+        background-color: red;
+        height: 100vh;
+        display: none;
+    }
+    .landing-page img{
+        display: none;
+    }
+    .landing-page{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        padding:50px 10px;
+    }
+    .landing-page-contents{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 100%;
+    }
+    .landing-page-contents h1{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .landing-page-contents p{
+      
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .btn{
+        padding:12px 12px; 
+        font-size: 12px;
+    }
 }
 
 
