@@ -142,7 +142,10 @@ body{
 .landing-page-contents p{
     font-size: 18px;
     font-weight: 400;
+<<<<<<< HEAD
     max-width: 425px;
+=======
+>>>>>>> 603bd53a279c4588fd9407436ce486cedf16a890
 } 
 
 .landingpage-img-container{
@@ -304,7 +307,14 @@ body{
 .experts-session-img{
     position: relative;
 }
+<<<<<<< HEAD
 .experts-session-cards{
+=======
+.fifth-session-img img{
+    display:block;
+}
+.fifth-session-cards{
+>>>>>>> 603bd53a279c4588fd9407436ce486cedf16a890
     display: flex;
     gap:20px;
 }
@@ -666,7 +676,11 @@ opacity: 0px
     display:flex;
     /* align-items: center;
     justify-content: center; */
+<<<<<<< HEAD
     gap: 50px;
+=======
+    gap: 45px;
+>>>>>>> 603bd53a279c4588fd9407436ce486cedf16a890
 }
 .footer-details{
     display: flex;
